@@ -1,0 +1,31 @@
+*{
+    margin:0;
+	padding:0;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body{
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+:root {
+	--defaultTextColor:rgb(242,242,248);
+	--homeButtonColor:rgb(255,100,90);
+
+	--darkText: rgb(20, 20, 40);
+
+	--color1:hsl(240, 68%, 35%);
+	--color2:hsl(225, 68%, 35%);
+	--color3:hsl(210, 68%, 35%);
+	--color4:hsl(195, 68%, 35%);
+	--color5:hsl(180, 68%, 35%);
+}

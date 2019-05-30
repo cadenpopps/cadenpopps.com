@@ -1,0 +1,27 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: var(--color1);
+    color: white;
+    font-weight: bold;
+    height:100vh;
+}
+
+a{
+    color: white;
+    text-decoration: underline;
+}
+
+.comingSoon{
+    font-weight:600; 
+    padding: 30px 0;
+    font-size:8vw;
+}
+
+.home{
+    padding: 10px 0;
+    font-size:3vw;
+}
