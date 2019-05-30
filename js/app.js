@@ -1,5 +1,3 @@
-
-
 var currentPage;
 var scrollPos, scrollStage, scrollMax, scrollHistory;
 var pageTimeout;
@@ -28,9 +26,6 @@ $(document).ready(function () {
 			$(".active").find(".content").css("opacity", "1");
 			$(".section").css("transition-duration", sectionTransitionDuration);
 			$(".cover").css("display", "none");
-			var r = canvasElement.getBoundingClientRect();
-			canvasX = r.left;
-			canvasY = r.top;
 		}, 400);
 		$(".section").click(function (event) {
 			if (!$(event.target).closest(".section").hasClass("active")) {
@@ -40,9 +35,6 @@ $(document).ready(function () {
 				clearTimeout(pageTimeout);
 				pageTimeout = setTimeout(function () {
 					$(event.target).closest(".section").find(".content").css("opacity", "1");
-					var r = canvasElement.getBoundingClientRect();
-					canvasX = r.left;
-					canvasY = r.top;
 				}, 400);
 			}
 		});
