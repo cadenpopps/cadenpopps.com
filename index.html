@@ -1,134 +1,160 @@
 <!DOCTYPE html>
 <html>
+	<head>
 
-<head>
-	<title>cadenpopps.com</title>
+		<title>cadenpopps.com</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Hello, I'm Caden Popps, this is my website. Explore my work and get in touch!">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta name="description" content="Hello, I'm Caden Popps, this is my website. Explore my work and get in touch!" />
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/app.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/index.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/css/site.css" />
-	<link rel="stylesheet" type="text/css" href="/css/index.css" />
-	<link rel="stylesheet" type="text/css" href="/css/tiles.css" />
+	</head>
 
-</head>
-
-<body>
-	<div class="cover"></div>
-	<div id="page">
-		<div id="welcome" class="section">
-			<div class="tab subtitle">welcome</div>
-			<div class="content">
-				<div>
-					<div class="subtitle">welcome to</div>
-					<div class="title">cadenpopps.com</div>
+	<body>
+		<div id="site-container">
+			<div id="menu">
+				<div id="home-button" class="menu-item active">Home</div>
+				<div id="portfolio-button" class="menu-item">Portfolio</div>
+				<div id="about-button" class="menu-item">About</div>
+				<div id="contact-button" class="menu-item">Contact</div>
+				<div id="menu-underline"></div>
+			</div>
+			<div id="home" class="page">
+				<div id="home-white-box"></div>
+				<div id="home-text-container">
+					<div id="home-title" class="home-text">Hello, I'm <span id="home-name">Caden Popps</span></div>
+					<div id="home-subtitle" class="home-text">Developer & Student</div>
+					<div id="explore-work-button" class="home-text">Explore my work</div>
 				</div>
-				<div id="socialLinks">
-					<a href="https://github.com/cadenpopps" class="socialLink">
-						<img src="/img/social/github.png" id="github">
+				<div id="home-social-links">
+					<a href="https://github.com/cadenpopps" id="github" class="social-link">
+						<img src="/img/social/github.png" id="github-img">
 					</a>
-					<a href="https://www.instagram.com/cadenpopps" class="socialLink">
-						<img src="/img/social/instagram.png" id="instagram">
+					<a href="https://www.linkedin.com/in/cadenpopps/" id="linkedin" class="social-link inverted">
+						<img src="/img/social/linkedin.png" id="linkedin-img">
+					</a>
+					<a href="https://www.fiverr.com/share/99RR3x" id="fiverr" class="social-link">
+						<img src="/img/social/fiverr.png" id="fiverr-img">
+					</a>
+				</div>
+			</div>
+
+			<div id="portfolio" class="page">
+				<div id="portfolio-title-container">
+					<div id="portfolio-title-text">Portfolio</div>
+					<div id="portfolio-title-line"></div>
+				</div>
+				<div id="portfolio-description">Professional and personal projects I've worked on. Please view the code on GitHub and click the links to explore the website for each project.</div>
+				<div id="projects">
+					<div class="project project-left">
+						<div class="project-info">
+							<div class="project-title">RL Insider</div>
+							<div class="project-subtitle">Freelance Frontend Development</div>
+							<div class="project-description">RL Insider is the most accurate price tracker for Rocket League Items. This website was my first paid freelance work, and it attracted over 1 million users in a matter of months. This project taught me to work in a team with another developer and a designer.</div>
+							<div class="project-links">
+								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://rl.insider.gg'">
+							</div>
+						</div>
+						<div class="project-image" onclick="window.location='http://rl.insider.gg'">
+							<img src="/img/projects/rlinsider.jpg">
+						</div>
+					</div>
+					<div class="project project-right">
+						<div class="project-info">
+							<div class="project-title">Popps.js</div>
+							<div class="project-subtitle">Javascript Canvas Library</div>
+							<div class="project-description">Popps.js is a Javascript Library I wrote in order to simplify the HTML5 Canvas. It has been used and tested in all of my online games, and all of the code is written from scratch. I learned how to write generalized, performance focused code from this project.</div>
+							<div class="project-links">
+								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://js.cadenpopps.com'">
+								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/popps.js'">
+							</div>
+						</div>
+						<div class="project-image" onclick="window.location='http://js.cadenpopps.com';">
+							<img src="/img/projects/js.jpg">
+						</div>
+					</div>
+					<div class="project project-left">
+						<div class="project-info">
+							<div class="project-title">Down the Dungeon</div>
+							<div class="project-subtitle">Javascript Dungeon Crawler</div>
+							<div class="project-description">Down the Dungeon is a one of a kind browser game. It focuses on performance, asthetics, and fun gameplay. I wrote Down the Dungeon in Javascript, including a custom game and display engine, in order to push the limits of browser gaming. While it is not yet compelete, this project has taught me so much: countless algorithms, design patterns, and most importantly, how to code smarter, not harder.</div>
+							<div class="project-links">
+								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://dungeon.cadenpopps.com'">
+								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/dungeon.cadenpopps.com'">
+							</div>
+						</div>
+						<div class="project-image" onclick="window.location='http://dungeon.cadenpopps.com';">
+							<img src="/img/projects/dungeon.png">
+						</div>
+					</div>
+					<div class="project project-right">
+						<div class="project-info">
+							<div class="project-title">Color Picker</div>
+							<div class="project-subtitle">For Designers and Developers</div>
+							<div class="project-description">This color picker provides a quick and visual way to select colors and transport them to your code. It includes a unique hue wheel, a large panel to view the color you selected, and the ability to copy 3 common color representations to your clipboard. This project taught me how color is represented on computers, as well as their relationship with one another.</div>
+							<div class="project-links">
+								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://color.cadenpopps.com'">
+								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/color.cadenpopps.com'">
+							</div>
+						</div>
+						<div class="project-image" onclick="window.location='http://color.cadenpopps.com';">
+							<img src="/img/projects/color.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about" class="page">
+				<div id="about-title-container">
+					<div id="about-title-text">Caden Popps</div>
+					<div id="about-title-line"></div>
+				</div>
+				<div id="about-subtitle">
+					<span class="about-subtitle-word">Curious</span> •
+					<span class="about-subtitle-word">Passionate</span> •
+					<span class="about-subtitle-word">Experienced</span>
+				</div>
+				<div id="about-text">
+					<div id="about-curious" class="about-text-section">
+						From the moment <span class="gold">Hello World</span> appeared on my console, I was hooked. I learned the technologies and skills I needed to&nbsp;code my website, and haven't stopped learning since.
+					</div>
+					<div id="about-passionate" class="about-text-section">
+						Programming can be tedious; without proper motivation many developers burn out.
+						The pursuit of writing
+						<span class="gold">smart</span>, <span class="gold">clean</span>, and <span class="gold">effective code</span>
+						has kept me passionate about the&nbsp;work I do.
+					</div>
+					<div id="about-experienced" class="about-text-section">
+						My experience includes several
+						<span class="gold">programming internships</span>,
+						many <span class="gold">personal projects</span>,
+						and a highly successful <span class="gold">freelance project</span>.
+						I am currently pursuing a bachelor's degree in Computer Science at the University of Texas at Dallas.
+					</div>
+				</div>
+			</div>
+
+			<div id="contact" class="page">
+				<div id="contact-text">Contact me at</div>
+				<div id="contact-email">Cadenpopps@gmail.com</div>
+				<div id="contact-social-links">
+					<a href="https://github.com/cadenpopps" id="github" class="social-link">
+						<img src="/img/social/github120.png" id="github-img">
+					</a>
+					<a href="https://www.linkedin.com/in/cadenpopps/" id="linkedin" class="social-link inverted">
+						<img src="/img/social/linkedin.png" id="linkedin-img">
+					</a>
+					<a href="https://www.fiverr.com/share/99RR3x" id="fiverr" class="social-link">
+						<img src="/img/social/fiverr.png" id="fiverr-img">
 					</a>
 				</div>
 			</div>
 		</div>
-
-		<div id="about" class="section">
-			<div class="tab subtitle">about</div>
-			<div class="content">
-				<div class="title">I'm Caden</div>
-				<div class="body">
-					<div class="bodyText">
-						<em class="subheader">Programmer&nbsp;-&nbsp;</em>
-						For the past few years I have been working on personal and professional
-						programming projects, mostly revolving around web development.
-						<br>
-						<br>
-						<em class="subheader">Student&nbsp;-&nbsp;</em>
-						I'm a Sophomore at the University of Texas at Dallas. I am a class of 2018 graduate from Westwood Highschool.
-						<br>
-						<br>
-						<em class="subheader">Individual&nbsp;-&nbsp;</em>
-						I have played soccer since I was three and piano since I was 17. I enjoy video games, technology, and learning. Family and friends are important to me, as they support me and challenge me to grow.
-					</div>
-					<a href="http://resume.cadenpopps.com" class="actionButton">Read my resume</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="projects" class="section">
-			<div class="tab subtitle">projects</div>
-			<div class="content">
-				<div class="title">Creative coding</div>
-				<div class="body">
-					<div class="bodyText">These are the personal and professional web programming projects I have worked on. All of my projects have gone through many iterations, and I have learned a lot working on each one.</div>
-					<div class="tiles">
-						<img id="r" class="arrow rightArrow" src="/img/icons/arrow.png">
-						<img id="l" class="arrow leftArrow" src="/img/icons/arrow.png">
-						<a href="http://rl.insider.gg" class="tile">
-							<img data-src="/img/projects/rlinsider.jpg" />
-							<div class="info">
-								RL Insider
-								<br>
-								<span class="description">Paid Frontend programming</span>
-							</div>
-						</a>
-						<a href="http://color.cadenpopps.com" class="tile">
-							<img data-src="/img/projects/color.jpg" />
-							<div class="info">
-								Color Picker
-								<br>
-								<span class="description">for programmers</span>
-							</div>
-						</a>
-						<a href="http://js.cadenpopps.com" class="tile">
-							<img data-src="/img/projects/js.jpg" />
-							<div class="info">
-								Javascript Libraries
-							</div>
-						</a>
-					</div>
-					<a href="http://cadenpopps.com/soon.html" class="actionButton">View my projects</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="games" class="section">
-			<div class="tab subtitle">games</div>
-			<div class="content">
-				<div class="title">Games I've made</div>
-				<div class="body">
-					<div class="bodyText">My first web apps were games. When I started, I used a javascript library called
-						<a href="https://p5js.org/" class="link">p5.js</a>, but I have since created
-						<a href="http://js.cadenpopps.com" class="link">my own javascript library</a> that my games run on. Creating these games introduced me to HTML, CSS, and Javascript
-						programming, which I use today to code the frontend for websites.</div>
-					<a href="http://games.cadenpopps.com" class="actionButton">Play my games</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="contact" class="section">
-			<div class="tab subtitle">contact</div>
-			<div class="content">
-				<div class="title">Get in touch</div>
-				<div class="body">
-					<div class="bodyText">If you would like to work with me, send me an email. I love challenges and I am always searching for new opportunities
-						and learning experiences. If you want to report a bug with my site, or you have a brilliant suggestion, fill out this
-						<a href="https://goo.gl/forms/zq78peVdJNa5klBv1" class="link">google form</a>.
-					</div>
-					<a href="mailto:cadenpopps1@gmail.com" class="actionButton">Email me</a>
-					<!-- <a href="/phone" class="actionButton">Call me</a> -->
-					<!-- (512) 537-1178 -->
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+	</body>
 
 </html>

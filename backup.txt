@@ -1,0 +1,23 @@
+<div class="project project-left" onclick="window.location='http://map.cadenpopps.com';">
+<div class="project-info">
+<div class="project-title">Perlin Noise Terrain</div>
+<div class="project-subtitle">Procedural Map Generator</div>
+<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nulla at dictum tincidunt. Nullam facilisis tortor at sem vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nulla at dictum tincidunt. Nullam facilisis tortor at sem vestibulum.</div>
+<div class="project-links"></div>
+</div>
+<div class="project-image">
+<img src="/img/projects/rlinsider.jpg">
+</div>
+</div>
+<div class="project project-right" onclick="window.location='http://timer.cadenpopps.com';">
+<div class="project-info">
+<div class="project-title">Timer</div>
+<div class="project-subtitle">Animated Timer and Stopwatch</div>
+<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nulla at dictum tincidunt. Nullam facilisis tortor at sem vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nulla at dictum tincidunt. Nullam facilisis tortor at sem vestibulum.</div>
+<div class="project-links"></div>
+</div>
+<div class="project-image">
+<img src="/img/projects/rlinsider.jpg">
+</div>
+</div>
+

@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+#about	css/index.css	/^#about{$/;"	i
+#contact	css/index.css	/^#contact{$/;"	i
+#games	css/index.css	/^#games{$/;"	i
+#instagram	css/index.css	/^	#instagram{$/;"	i
+#page	css/index.css	/^#page{$/;"	i
+#projects	css/index.css	/^#projects{$/;"	i
+#socialLinks	css/index.css	/^	#socialLinks{$/;"	i
+#welcome	css/index.css	/^#welcome{$/;"	i
+#welcome .content	css/index.css	/^#welcome .content{$/;"	c
+*	css/site.css	/^*{$/;"	s
+.actionButton	css/index.css	/^		.actionButton{$/;"	c
+.arrow	css/tiles.css	/^.arrow{$/;"	c
+.arrow:hover	css/tiles.css	/^.arrow:hover{$/;"	c
+.body	css/index.css	/^	.body{$/;"	c
+.body	css/index.css	/^.body{$/;"	c
+.bodyText	css/index.css	/^		.bodyText{$/;"	c
+.comingSoon	css/comingSoon.css	/^.comingSoon{$/;"	c
+.content	css/index.css	/^.content{$/;"	c
+.description	css/tiles.css	/^.description{$/;"	c
+.home	css/comingSoon.css	/^.home{$/;"	c
+.info	css/tiles.css	/^.info{$/;"	c
+.leftArrow	css/tiles.css	/^.leftArrow{$/;"	c
+.link	css/index.css	/^.link{$/;"	c
+.rightArrow	css/tiles.css	/^.rightArrow{$/;"	c
+.section	css/index.css	/^.section{$/;"	c
+.socialLink	css/index.css	/^		.socialLink{$/;"	c
+.socialLink *	css/index.css	/^		.socialLink *{$/;"	s
+.socialLink:hover	css/index.css	/^		.socialLink:hover{$/;"	c
+.subheader	css/index.css	/^.subheader{$/;"	c
+.subtitle	css/index.css	/^.subtitle{$/;"	c
+.tab	css/index.css	/^.tab{$/;"	c
+.tile	css/tiles.css	/^.tile{$/;"	c
+.tile img	css/tiles.css	/^.tile img{$/;"	s
+.tiles	css/tiles.css	/^.tiles{$/;"	c
+.tiles:hover .tile .info	css/tiles.css	/^.tiles:hover .tile .info{$/;"	c
+.tiles:hover .tile img	css/tiles.css	/^.tiles:hover .tile img{$/;"	s
+.title	css/index.css	/^.title{$/;"	c
+:root	css/index.css	/^:root {$/;"	s
+:root	css/site.css	/^:root {$/;"	s
+:root	css/tiles.css	/^:root {$/;"	s
+AnonymousFunction5b94773d0100	js/app.js	/^$(document).ready(function () {$/;"	f
+AnonymousFunction5b94773d0200	js/app.js	/^		pageTimeout = setTimeout(function () {$/;"	f	function:AnonymousFunction5b94773d0100
+AnonymousFunction5b94773d0300	js/app.js	/^		$(".section").click(function (event) {$/;"	f
+AnonymousFunction5b94773d0400	js/app.js	/^				pageTimeout = setTimeout(function () {$/;"	f	function:AnonymousFunction5b94773d0300
+AnonymousFunction5b94773d0500	js/app.js	/^	$(".arrow").click(function (event) {$/;"	f
+AnonymousFunction5b94773d0600	js/app.js	/^	[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {$/;"	f
+PROJECTS	js/app.js	/^var PROJECTS = 4;$/;"	v
+a	css/comingSoon.css	/^a{$/;"	s
+a	css/index.css	/^a {$/;"	s
+a	css/site.css	/^a {$/;"	s
+about	index.html	/^		<div id="about" class="section">$/;"	I
+arrowClick	js/app.js	/^function arrowClick(dir) {$/;"	f
+body	css/comingSoon.css	/^body{$/;"	s
+body	css/index.css	/^body{$/;"	s
+body	css/site.css	/^body {$/;"	s
+body	css/site.css	/^body{$/;"	s
+contact	index.html	/^		<div id="contact" class="section">$/;"	I
+currentPage	js/app.js	/^var currentPage;$/;"	v
+games	index.html	/^		<div id="games" class="section">$/;"	I
+github	index.html	/^						<img src="\/img\/social\/github.png" id="github">$/;"	I
+html	css/site.css	/^html,$/;"	s
+instagram	index.html	/^						<img src="\/img\/social\/instagram.png" id="instagram">$/;"	I
+l	index.html	/^						<img id="l" class="arrow leftArrow" src="\/img\/icons\/arrow.png">$/;"	I
+loadImages	js/app.js	/^function loadImages() {$/;"	f
+onload	js/app.js	/^		img.onload = function () {$/;"	f	function:img
+page	index.html	/^	<div id="page">$/;"	I
+pageTimeout	js/app.js	/^var pageTimeout;$/;"	v
+projState	js/app.js	/^var projState = 0;$/;"	v
+projects	index.html	/^		<div id="projects" class="section">$/;"	I
+r	index.html	/^						<img id="r" class="arrow rightArrow" src="\/img\/icons\/arrow.png">$/;"	I
+replacePage	js/app.js	/^function replacePage(query) {$/;"	f
+scrollHistory	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
+scrollMax	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
+scrollPos	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
+scrollStage	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
+socialLinks	index.html	/^				<div id="socialLinks">$/;"	I
+welcome	index.html	/^		<div id="welcome" class="section">$/;"	I
