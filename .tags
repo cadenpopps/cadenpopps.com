@@ -5,80 +5,96 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
-#about	css/index.css	/^#about{$/;"	i
-#contact	css/index.css	/^#contact{$/;"	i
-#games	css/index.css	/^#games{$/;"	i
-#instagram	css/index.css	/^	#instagram{$/;"	i
-#page	css/index.css	/^#page{$/;"	i
-#projects	css/index.css	/^#projects{$/;"	i
-#socialLinks	css/index.css	/^	#socialLinks{$/;"	i
-#welcome	css/index.css	/^#welcome{$/;"	i
-#welcome .content	css/index.css	/^#welcome .content{$/;"	c
-*	css/site.css	/^*{$/;"	s
-.actionButton	css/index.css	/^		.actionButton{$/;"	c
+#site-container	css/index.css	/^#site-container {$/;"	i
+*	css/index.css	/^* {$/;"	s
 .arrow	css/tiles.css	/^.arrow{$/;"	c
 .arrow:hover	css/tiles.css	/^.arrow:hover{$/;"	c
-.body	css/index.css	/^	.body{$/;"	c
-.body	css/index.css	/^.body{$/;"	c
-.bodyText	css/index.css	/^		.bodyText{$/;"	c
 .comingSoon	css/comingSoon.css	/^.comingSoon{$/;"	c
-.content	css/index.css	/^.content{$/;"	c
 .description	css/tiles.css	/^.description{$/;"	c
+.gold	css/index.css	/^.gold {$/;"	c
 .home	css/comingSoon.css	/^.home{$/;"	c
 .info	css/tiles.css	/^.info{$/;"	c
+.inverted	css/index.css	/^.inverted {$/;"	c
 .leftArrow	css/tiles.css	/^.leftArrow{$/;"	c
-.link	css/index.css	/^.link{$/;"	c
 .rightArrow	css/tiles.css	/^.rightArrow{$/;"	c
-.section	css/index.css	/^.section{$/;"	c
-.socialLink	css/index.css	/^		.socialLink{$/;"	c
-.socialLink *	css/index.css	/^		.socialLink *{$/;"	s
-.socialLink:hover	css/index.css	/^		.socialLink:hover{$/;"	c
-.subheader	css/index.css	/^.subheader{$/;"	c
-.subtitle	css/index.css	/^.subtitle{$/;"	c
-.tab	css/index.css	/^.tab{$/;"	c
 .tile	css/tiles.css	/^.tile{$/;"	c
 .tile img	css/tiles.css	/^.tile img{$/;"	s
 .tiles	css/tiles.css	/^.tiles{$/;"	c
 .tiles:hover .tile .info	css/tiles.css	/^.tiles:hover .tile .info{$/;"	c
 .tiles:hover .tile img	css/tiles.css	/^.tiles:hover .tile img{$/;"	s
-.title	css/index.css	/^.title{$/;"	c
 :root	css/index.css	/^:root {$/;"	s
-:root	css/site.css	/^:root {$/;"	s
 :root	css/tiles.css	/^:root {$/;"	s
+ANIMATIONS	js/app.js	/^const ANIMATIONS = true, NO_ANIMATIONS = false;$/;"	C
 AnonymousFunction5b94773d0100	js/app.js	/^$(document).ready(function () {$/;"	f
-AnonymousFunction5b94773d0200	js/app.js	/^		pageTimeout = setTimeout(function () {$/;"	f	function:AnonymousFunction5b94773d0100
-AnonymousFunction5b94773d0300	js/app.js	/^		$(".section").click(function (event) {$/;"	f
-AnonymousFunction5b94773d0400	js/app.js	/^				pageTimeout = setTimeout(function () {$/;"	f	function:AnonymousFunction5b94773d0300
-AnonymousFunction5b94773d0500	js/app.js	/^	$(".arrow").click(function (event) {$/;"	f
-AnonymousFunction5b94773d0600	js/app.js	/^	[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {$/;"	f
-PROJECTS	js/app.js	/^var PROJECTS = 4;$/;"	v
+AnonymousFunction5b94773d0200	js/app.js	/^		setTimeout(function() {$/;"	f	function:fixMenu
+AnonymousFunction5b94773d0300	js/app.js	/^		setTimeout(function() {$/;"	f	function:fixMenuUnderline
+AnonymousFunction5b94773d0400	js/app.js	/^	setTimeout(function() {$/;"	f	function:initMenu
+AnonymousFunction5b94773d0500	js/app.js	/^		$("#home-button").click(function() {$/;"	f
+AnonymousFunction5b94773d0600	js/app.js	/^		$("#portfolio-button").click(function() {$/;"	f
+AnonymousFunction5b94773d0700	js/app.js	/^		$("#about-button").click(function() {$/;"	f
+AnonymousFunction5b94773d0800	js/app.js	/^		$("#contact-button").click(function() {$/;"	f
+AnonymousFunction5b94773d0900	js/app.js	/^	setTimeout(function() {$/;"	f	function:initHomePage
+AnonymousFunction5b94773d0a00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d0b00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d0c00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d0d00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d0e00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d0f00	js/app.js	/^		setTimeout(function() {$/;"	f	function:initHomePage.AnonymousFunction5b94773d0900
+AnonymousFunction5b94773d1000	js/app.js	/^	$("#explore-work-button").click(function() {$/;"	f
+NO_ANIMATIONS	js/app.js	/^const ANIMATIONS = true, NO_ANIMATIONS = false;$/;"	C
 a	css/comingSoon.css	/^a{$/;"	s
 a	css/index.css	/^a {$/;"	s
-a	css/site.css	/^a {$/;"	s
-about	index.html	/^		<div id="about" class="section">$/;"	I
-arrowClick	js/app.js	/^function arrowClick(dir) {$/;"	f
+about	index.html	/^			<div id="about" class="page">$/;"	I
+about-button	index.html	/^				<div id="about-button" class="menu-item">About<\/div>$/;"	I
+about-curious	index.html	/^					<div id="about-curious" class="about-text-section">$/;"	I
+about-experienced	index.html	/^					<div id="about-experienced" class="about-text-section">$/;"	I
+about-passionate	index.html	/^					<div id="about-passionate" class="about-text-section">$/;"	I
+about-subtitle	index.html	/^				<div id="about-subtitle">$/;"	I
+about-text	index.html	/^				<div id="about-text">$/;"	I
+about-title-container	index.html	/^				<div id="about-title-container">$/;"	I
+about-title-line	index.html	/^					<div id="about-title-line"><\/div>$/;"	I
+about-title-text	index.html	/^					<div id="about-title-text">Caden Popps<\/div>$/;"	I
+activePage	js/app.js	/^let activePage;$/;"	v
 body	css/comingSoon.css	/^body{$/;"	s
-body	css/index.css	/^body{$/;"	s
-body	css/site.css	/^body {$/;"	s
-body	css/site.css	/^body{$/;"	s
-contact	index.html	/^		<div id="contact" class="section">$/;"	I
-currentPage	js/app.js	/^var currentPage;$/;"	v
-games	index.html	/^		<div id="games" class="section">$/;"	I
-github	index.html	/^						<img src="\/img\/social\/github.png" id="github">$/;"	I
-html	css/site.css	/^html,$/;"	s
-instagram	index.html	/^						<img src="\/img\/social\/instagram.png" id="instagram">$/;"	I
-l	index.html	/^						<img id="l" class="arrow leftArrow" src="\/img\/icons\/arrow.png">$/;"	I
-loadImages	js/app.js	/^function loadImages() {$/;"	f
-onload	js/app.js	/^		img.onload = function () {$/;"	f	function:img
-page	index.html	/^	<div id="page">$/;"	I
-pageTimeout	js/app.js	/^var pageTimeout;$/;"	v
-projState	js/app.js	/^var projState = 0;$/;"	v
-projects	index.html	/^		<div id="projects" class="section">$/;"	I
-r	index.html	/^						<img id="r" class="arrow rightArrow" src="\/img\/icons\/arrow.png">$/;"	I
-replacePage	js/app.js	/^function replacePage(query) {$/;"	f
-scrollHistory	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
-scrollMax	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
-scrollPos	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
-scrollStage	js/app.js	/^var scrollPos, scrollStage, scrollMax, scrollHistory;$/;"	v
-socialLinks	index.html	/^				<div id="socialLinks">$/;"	I
-welcome	index.html	/^		<div id="welcome" class="section">$/;"	I
+body	css/index.css	/^body {$/;"	s
+body	css/index.css	/^html, body {$/;"	s
+contact	index.html	/^			<div id="contact" class="page">$/;"	I
+contact-button	index.html	/^				<div id="contact-button" class="menu-item">Contact<\/div>$/;"	I
+contact-email	index.html	/^				<div id="contact-email">Cadenpopps@gmail.com<\/div>$/;"	I
+contact-social-links	index.html	/^				<div id="contact-social-links">$/;"	I
+contact-text	index.html	/^				<div id="contact-text">Contact me at<\/div>$/;"	I
+explore-work-button	index.html	/^					<div id="explore-work-button" class="home-text">Explore my work<\/div>$/;"	I
+fiverr	index.html	/^					<a href="https:\/\/www.fiverr.com\/share\/99RR3x" id="fiverr" class="social-link">$/;"	I
+fiverr-img	index.html	/^						<img src="\/img\/social\/fiverr.png" id="fiverr-img">$/;"	I
+fixMenu	js/app.js	/^function fixMenu(animations) {$/;"	f
+fixMenuUnderline	js/app.js	/^function fixMenuUnderline(animation) {$/;"	f
+github	index.html	/^					<a href="https:\/\/github.com\/cadenpopps" id="github" class="social-link">$/;"	I
+github-img	index.html	/^						<img src="\/img\/social\/github.png" id="github-img">$/;"	I
+home	index.html	/^			<div id="home" class="page">$/;"	I
+home-button	index.html	/^				<div id="home-button" class="menu-item active">Home<\/div>$/;"	I
+home-name	index.html	/^					<div id="home-title" class="home-text">Hello, I'm <span id="home-name">Caden Popps<\/span></;"	I
+home-social-links	index.html	/^				<div id="home-social-links">$/;"	I
+home-subtitle	index.html	/^					<div id="home-subtitle" class="home-text">Developer & Student<\/div>$/;"	I
+home-text-container	index.html	/^				<div id="home-text-container">$/;"	I
+home-title	index.html	/^					<div id="home-title" class="home-text">Hello, I'm <span id="home-name">Caden Popps<\/span></;"	I
+home-white-box	index.html	/^				<div id="home-white-box"><\/div>$/;"	I
+html	css/index.css	/^html, body {$/;"	s
+initHomePage	js/app.js	/^function initHomePage() {$/;"	f
+initMenu	js/app.js	/^function initMenu() {$/;"	f
+initPages	js/app.js	/^function initPages() {$/;"	f
+linkedin	index.html	/^					<a href="https:\/\/www.linkedin.com\/in\/cadenpopps\/" id="linkedin" class="social-link inv/;"	I
+linkedin-img	index.html	/^						<img src="\/img\/social\/linkedin.png" id="linkedin-img">$/;"	I
+menu	index.html	/^			<div id="menu">$/;"	I
+menu-underline	index.html	/^				<div id="menu-underline"><\/div>$/;"	I
+portfolio	index.html	/^			<div id="portfolio" class="page">$/;"	I
+portfolio-button	index.html	/^				<div id="portfolio-button" class="menu-item">Portfolio<\/div>$/;"	I
+portfolio-description	index.html	/^				<div id="portfolio-description">Professional and personal projects I've worked on. Please vi/;"	I
+portfolio-title-container	index.html	/^				<div id="portfolio-title-container">$/;"	I
+portfolio-title-line	index.html	/^					<div id="portfolio-title-line"><\/div>$/;"	I
+portfolio-title-text	index.html	/^					<div id="portfolio-title-text">Portfolio<\/div>$/;"	I
+projects	index.html	/^				<div id="projects">$/;"	I
+removeTransitionDuration	js/app.js	/^function removeTransitionDuration(element) {$/;"	f
+restoreTransitionDuration	js/app.js	/^function restoreTransitionDuration(element) {$/;"	f
+setActivePage	js/app.js	/^function setActivePage(pageName) {$/;"	f
+setTransitionDuration	js/app.js	/^function setTransitionDuration(element, time) {$/;"	f
+site-container	index.html	/^		<div id="site-container">$/;"	I
