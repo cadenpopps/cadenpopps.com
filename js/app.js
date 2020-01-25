@@ -6,6 +6,7 @@ $(document).ready(function () {
 
 	if (window.innerWidth >= 900) {
 		initPages();
+		initMenu();
 	}
 
 });
@@ -24,74 +25,6 @@ function restoreTransitionDuration(element) {
 
 function restoreTransform(element) {
 	$(element).css("transform", "");
-}
-
-function setActivePage(pageName) {
-	activePage = pageName;
-	history.replaceState(pageName, "cadenpopps.com", "/#" + pageName);
-	$(".page").css("display", "none");
-	$("#" + activePage).css("display", "flex");
-
-	fixMenu(ANIMATIONS);
-
-	switch(pageName) {
-		case "home":
-			document.title = "Home | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#home").css("display", "flex");
-			break;
-		case "portfolio":
-			document.title = "Portfolio | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#portfolio").css("display", "flex");
-			break;
-		case "about":
-			document.title = "About | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#about").css("display", "flex");
-			break;
-		case "contact":
-			document.title = "Contact | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#contact").css("display", "flex");
-			break;
-	}
-}
-
-function fixMenu(animations) {
-	if(animations) {
-		$(".menu-item.active").removeClass("active");
-		$("#" + activePage + "-button").addClass("active");
-		fixMenuUnderline(ANIMATIONS);
-	}
-	else {
-		$(".menu-item").css("transition-duration", "0s");
-		$(".menu-item.active").removeClass("active");
-		$("#" + activePage + "-button").addClass("active");
-		fixMenuUnderline(NO_ANIMATIONS);
-		setTimeout(function() {
-			$(".menu-item").css("transition-duration", "");
-		}, 10);
-	}
-}
-
-function fixMenuUnderline(animation) {
-	if(animation) {
-		let width = $("#" + activePage + "-button").outerWidth() + 2;
-		let position = $("#" + activePage + "-button").position().left - 6;
-		$("#menu-underline").css("width", width);
-		$("#menu-underline").css("transform", "translate(" + position + "px)");
-	}
-	else {
-		$("#menu-underline").css("transition-duration", "0s");
-		let width = $("#" + activePage + "-button").outerWidth() + 2;
-		let position = $("#" + activePage + "-button").position().left - 6;
-		$("#menu-underline").css("width", width);
-		$("#menu-underline").css("transform", "translate(" + position + "px)");
-		setTimeout(function() {
-			$("#menu-underline").css("transition-duration", "");
-		}, 10);
-	}
 }
 
 function initPages() {
@@ -124,32 +57,88 @@ function initPages() {
 			break;
 	}
 
-	setTimeout(initMenu, 120);
 	$("#explore-work-button").click(function() {
 		setActivePage("portfolio");
 	});
 }
 
 function initMenu() {
-	fixMenu(NO_ANIMATIONS);
+
+	removeTransitionDuration($(".menu-item"));
+	removeTransitionDuration($("#menu-underline"));
+
+	$("#" + activePage + "-button").addClass("active");
+
 	setTimeout(function() {
-		$("#menu-underline").css("opacity", "1");
-		$("#home-button").click(function() {
-			setActivePage("home");
-		});
+		let width = $("#" + activePage + "-button").outerWidth() + 2;
+		let position = $("#" + activePage + "-button").position().left - 6;
+		$("#menu-underline").css("width", width);
+		$("#menu-underline").css("transform", "translate(" + position + "px)");
+		setTimeout(function() {
+			restoreTransitionDuration($(".menu-item"));
+			restoreTransitionDuration($("#menu-underline"));
+			$("#menu-underline").css("opacity", "1");
+		}, 100);
+	}, 100);
 
-		$("#portfolio-button").click(function() {
-			setActivePage("portfolio");
-		});
+	$("#home-button").click(function() {
+		setActivePage("home");
+	});
+	$("#portfolio-button").click(function() {
+		setActivePage("portfolio");
+	});
+	$("#about-button").click(function() {
+		setActivePage("about");
+	});
+	$("#contact-button").click(function() {
+		setActivePage("contact");
+	});
+}
 
-		$("#about-button").click(function() {
-			setActivePage("about");
-		});
 
-		$("#contact-button").click(function() {
-			setActivePage("contact");
-		});
-	}, 10);
+function setActivePage(pageName) {
+	activePage = pageName;
+	history.replaceState(pageName, "cadenpopps.com", "/#" + pageName);
+	$(".page").css("display", "none");
+	$("#" + activePage).css("display", "flex");
+
+	fixMenu();
+
+	switch(pageName) {
+		case "home":
+			document.title = "Home | cadenpopps.com";
+			$(".page").css("display", "none");
+			$("#home").css("display", "flex");
+			break;
+		case "portfolio":
+			document.title = "Portfolio | cadenpopps.com";
+			$(".page").css("display", "none");
+			$("#portfolio").css("display", "flex");
+			break;
+		case "about":
+			document.title = "About | cadenpopps.com";
+			$(".page").css("display", "none");
+			$("#about").css("display", "flex");
+			break;
+		case "contact":
+			document.title = "Contact | cadenpopps.com";
+			$(".page").css("display", "none");
+			$("#contact").css("display", "flex");
+			break;
+	}
+}
+
+function fixMenu() {
+	$(".menu-item.active").removeClass("active");
+	$("#" + activePage + "-button").addClass("active");
+	fixMenuUnderline();
+}
+
+function fixMenuUnderline() {
+	let width = $("#" + activePage + "-button").outerWidth() + 2;
+	let position = $("#" + activePage + "-button").position().left - 6;
+	$("#menu-underline").css("width", width);
+	$("#menu-underline").css("transform", "translate(" + position + "px)");
 }
 
 function initHomePage() {
@@ -200,6 +189,14 @@ function initHomePage() {
 		}, TOTAL_TEXT_ANIMATION_TIME + (3 * TIME_BETWEEN_SOCIAL_ANIMATIONS) + SOCIAL_ANIMATION_TIME);
 
 	}, ANIMATION_DELAY);
+}
+
+function initPortfolioPage() {
+
+}
+
+function initAboutPage() {
+
 }
 
 function initContactPage() {
