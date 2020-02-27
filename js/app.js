@@ -37,6 +37,7 @@ function initPages() {
 
 	history.replaceState(activePage, "cadenpopps.com", "/#" + activePage);
 	$(".page").css("display", "none");
+	$(".page").css("opacity", "1");
 
 	switch(activePage) {
 		case "home":
@@ -99,31 +100,30 @@ function initMenu() {
 function setActivePage(pageName) {
 	activePage = pageName;
 	history.replaceState(pageName, "cadenpopps.com", "/#" + pageName);
-	$(".page").css("display", "none");
-	$("#" + activePage).css("display", "flex");
+	$(".page").css("opacity", "0");
+	setTimeout(function() {
+		$(".page").css("display", "none");
+		$("#" + activePage).css("display", "flex");
+		setTimeout(function() {
+			$("#" + activePage).css("opacity", "1");
+		}, 10);
+	}, 250);
 
 	fixMenu();
+
 
 	switch(pageName) {
 		case "home":
 			document.title = "Home | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#home").css("display", "flex");
 			break;
 		case "portfolio":
 			document.title = "Portfolio | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#portfolio").css("display", "flex");
 			break;
 		case "about":
 			document.title = "About | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#about").css("display", "flex");
 			break;
 		case "contact":
 			document.title = "Contact | cadenpopps.com";
-			$(".page").css("display", "none");
-			$("#contact").css("display", "flex");
 			break;
 	}
 }
@@ -192,7 +192,39 @@ function initHomePage() {
 }
 
 function initPortfolioPage() {
+	const ANIMATION_DELAY = 200;
+	const ANIMATION_TIME = 800;
+	const TIME_BETWEEN_ANIMATIONS = 60;
 
+	$("#portfolio").css("display", "flex");
+
+	if(window.scrollY < 400) {
+		removeTransitionDuration("#portfolio-title-container");
+		removeTransitionDuration("#portfolio-description");
+		removeTransitionDuration("#projects");
+		$("#portfolio-title-container").css("transform", "translate(0, 1000px)");
+		$("#portfolio-description").css("transform", "translate(0, 1000px)");
+		$("#projects").css("transform", "translate(0, 1000px)");
+
+		setTimeout(function() {
+			setTransitionDuration("#portfolio-title-container", ANIMATION_TIME + "ms");
+			setTransitionDuration("#portfolio-description", ANIMATION_TIME + "ms");
+			setTransitionDuration("#projects", ANIMATION_TIME + "ms");
+
+			restoreTransform("#portfolio-title-container");
+			setTimeout(function() {
+				restoreTransform("#portfolio-description");
+			}, 1 * TIME_BETWEEN_ANIMATIONS);
+			setTimeout(function() {
+				restoreTransform("#projects");
+			}, (2 * TIME_BETWEEN_ANIMATIONS));
+
+		}, ANIMATION_DELAY);
+
+		restoreTransitionDuration("#portfolio-title-container");
+		restoreTransitionDuration("#portfolio-description");
+		restoreTransitionDuration("#projects");
+	}
 }
 
 function initAboutPage() {
@@ -211,6 +243,7 @@ function initContactPage() {
 	const TOTAL_TEXT_ANIMATION_TIME = TEXT_ANIMATION_TIME + TIME_BETWEEN_TEXT_ANIMATIONS;
 
 	$("#contact").css("display", "flex");
+	$("#contact").css("height", "100vh");
 
 	//problem with height of contact cutting off animation
 
@@ -254,7 +287,10 @@ function initContactPage() {
 		}, TOTAL_TEXT_ANIMATION_TIME + (3 * TIME_BETWEEN_SOCIAL_ANIMATIONS));
 		setTimeout(function() {
 			restoreTransitionDuration("#home-social-links>.social-link");
+			$("#contact").css("height", "auto");
 		}, TOTAL_TEXT_ANIMATION_TIME + (4 * TIME_BETWEEN_SOCIAL_ANIMATIONS) + SOCIAL_ANIMATION_TIME);
 
+
 	}, ANIMATION_DELAY);
+
 }
