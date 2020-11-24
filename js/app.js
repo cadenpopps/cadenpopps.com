@@ -155,7 +155,7 @@ function initHomePage() {
 	$(".home-text").css("opacity", "0");
 	$(".home-text").css("transform", "translate(0, 250px)");
 	removeTransitionDuration("#home-social-links>.social-link");
-	$("#home-social-links>.social-link").css("transform", "translate(-75px, 0)");
+	$("#home-social-links>.social-link").css("transform", "translate(-100px, 0)");
 
 	setTimeout(function() {
 

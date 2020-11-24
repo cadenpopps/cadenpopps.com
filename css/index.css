@@ -1,9 +1,9 @@
 :root {
 	--menu-height: 50px;
 
-	--homeSocialButtonSize: 40px;
+	--homeSocialButtonSize: 50px;
 	--contactSocialButtonSize: 64px;
-	--projectLinkSize: 26px;
+	--projectLinkSize: 30px;
 
 	--normal-text: white;
 	--emphasized-text: red;
@@ -12,6 +12,7 @@
 	--purple: #27283A;
 	--light-purple: #34354A;
 	--gold: #FFCC33;
+	--off-gold: #EABC2A;
 	--gray: #B0B0BA;
 }
 
@@ -194,7 +195,7 @@ a {
 
 		border: 3px solid white;
 		border-radius: 8px;
-		color: var(--gold);
+		color: var(--off-gold);
 		font-size: 19pt;
 		font-weight: 600;
 
@@ -207,18 +208,19 @@ a {
 	}
 	#home-social-links {
 		position: absolute;
-		bottom: 0;
+		bottom: 10px;
 		left: 0;
-		margin: 15px 20px;
+		margin: 20px 20px;
 		display: flex;
 		flex-direction: column;
 	}
 	#home-social-links>.social-link {
 		width: var(--homeSocialButtonSize);
 		height: var(--homeSocialButtonSize);
+		margin: 5px 0
 	}
 	#home-social-links>.social-link:hover {
-		transform: scale(1.1) translate(10px, 0) !important;
+		transform: scale(1.1) translate(5px, 0) !important;
 	}
 
 
