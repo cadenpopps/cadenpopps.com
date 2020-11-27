@@ -17,7 +17,8 @@
 	</head>
 
 	<body>
-		<div id="site-container">
+		<!-- <div id="site-container"> -->
+
 			<div id="menu">
 				<div id="home-button" class="menu-item">Home</div>
 				<div id="portfolio-button" class="menu-item">Portfolio</div>
@@ -25,12 +26,14 @@
 				<div id="contact-button" class="menu-item">Contact</div>
 				<div id="menu-underline"></div>
 			</div>
+
 			<div id="home" class="page">
-				<div id="home-white-box"></div>
-				<div id="home-text-container">
-					<div id="home-title" class="home-text">Hello, I'm <span id="home-name">Caden Popps</span></div>
-					<div id="home-subtitle" class="home-text">Developer & Student</div>
-					<div id="explore-work-button" class="home-text">Explore my work</div>
+				<div id="home-content" class="page-content">
+					<div id="home-text-container">
+						<div id="home-title" class="home-text">Hello, I'm <span id="home-name">Caden Popps</span></div>
+						<div id="home-subtitle" class="home-text">Developer & Student</div>
+						<div id="explore-work-button" class="home-text">Explore my work</div>
+					</div>
 				</div>
 				<div id="home-social-links">
 					<a href="https://github.com/cadenpopps" id="github" class="social-link">
@@ -43,113 +46,123 @@
 			</div>
 
 			<div id="portfolio" class="page">
-				<div id="portfolio-title-container">
-					<div id="portfolio-title-text">Portfolio</div>
-					<div id="portfolio-title-line"></div>
-				</div>
-				<div id="portfolio-description">Professional and personal projects I've worked on. Please view the code on GitHub and click the links to explore the website for each project.</div>
-				<div id="projects">
-					<div class="project project-left">
-						<div class="project-info">
-							<div class="project-title">RL Insider</div>
-							<div class="project-subtitle">Freelance Frontend Development</div>
-							<div class="project-description">RL Insider is the most accurate price tracker for Rocket League Items. This website was my first paid freelance work, and it attracted over 1 million users in a matter of months. This project taught me to work in a team with another developer and a designer.</div>
-							<div class="project-links">
-								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://rl.insider.gg'">
-							</div>
-						</div>
-						<div class="project-image" onclick="window.location='http://rl.insider.gg'">
-							<img src="/img/projects/rlinsider.jpg">
-						</div>
+				<div id="portfolio-content" class="page-content">
+					<div id="portfolio-title" class="page-title-container">
+						<div class="page-title-text">Portfolio</div>
+						<div class="page-title-line"></div>
 					</div>
-					<div class="project project-right">
-						<div class="project-info">
-							<div class="project-title">Popps.js</div>
-							<div class="project-subtitle">Javascript Canvas Library</div>
-							<div class="project-description">Popps.js is a Javascript Library I wrote in order to simplify the HTML5 Canvas. It has been used and tested in all of my online games, and all of the code is written from scratch. I learned how to write generalized, performance focused code from this project.</div>
-							<div class="project-links">
-								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://js.cadenpopps.com'">
-								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/popps.js'">
+					<div id="portfolio-description">Professional and personal projects I've worked on. Please view the code on GitHub and click the links to explore the website for each project.</div>
+					<div id="projects">
+						<div class="project project-left">
+							<div class="project-info">
+								<div class="project-title">RL Insider</div>
+								<div class="project-subtitle">Freelance Frontend Development</div>
+								<div class="project-description">RL Insider is the most accurate price tracker for Rocket League Items. This website was my first paid freelance work, and it attracted over 1 million users in a matter of months. This project taught me to work in a team with another developer and a designer.</div>
+								<div class="project-links">
+									<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://rl.insider.gg'">
+								</div>
+							</div>
+							<div class="project-image" onclick="window.location='http://rl.insider.gg'">
+								<img src="/img/projects/rlinsider.jpg">
 							</div>
 						</div>
-						<div class="project-image" onclick="window.location='http://js.cadenpopps.com';">
-							<img src="/img/projects/js.jpg">
-						</div>
-					</div>
-					<div class="project project-left">
-						<div class="project-info">
-							<div class="project-title">Down the Dungeon</div>
-							<div class="project-subtitle">Javascript Dungeon Crawler</div>
-							<div class="project-description">Down the Dungeon is a one of a kind browser game. It focuses on performance, asthetics, and fun gameplay. I wrote Down the Dungeon in Javascript, including a custom game and display engine, in order to push the limits of browser gaming. While it is not yet compelete, this project has taught me so much: countless algorithms, design patterns, and most importantly, how to code smarter, not harder.</div>
-							<div class="project-links">
-								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://dungeon.cadenpopps.com'">
-								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/dungeon.cadenpopps.com'">
+						<div class="project project-right">
+							<div class="project-info">
+								<div class="project-title">Popps.js</div>
+								<div class="project-subtitle">Javascript Canvas Library</div>
+								<div class="project-description">Popps.js is a Javascript Library I wrote in order to simplify the HTML5 Canvas. It has been used and tested in all of my online games, and all of the code is written from scratch. I learned how to write generalized, performance focused code from this project.</div>
+								<div class="project-links">
+									<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://js.cadenpopps.com'">
+									<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/popps.js'">
+								</div>
+							</div>
+							<div class="project-image" onclick="window.location='http://js.cadenpopps.com';">
+								<img src="/img/projects/js.jpg">
 							</div>
 						</div>
-						<div class="project-image" onclick="window.location='http://dungeon.cadenpopps.com';">
-							<img src="/img/projects/dungeon.png">
-						</div>
-					</div>
-					<div class="project project-right">
-						<div class="project-info">
-							<div class="project-title">Color Picker</div>
-							<div class="project-subtitle">For Designers and Developers</div>
-							<div class="project-description">This color picker provides a quick and visual way to select colors and transport them to your code. It includes a unique hue wheel, a large panel to view the color you selected, and the ability to copy 3 common color representations to your clipboard. This project taught me how color is represented on computers, as well as their relationship with one another.</div>
-							<div class="project-links">
-								<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://color.cadenpopps.com'">
-								<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/color.cadenpopps.com'">
+						<div class="project project-left">
+							<div class="project-info">
+								<div class="project-title">Down the Dungeon</div>
+								<div class="project-subtitle">Javascript Dungeon Crawler</div>
+								<div class="project-description">Down the Dungeon is a one of a kind browser game. It focuses on performance, asthetics, and fun gameplay. I wrote Down the Dungeon in Javascript, including a custom game and display engine, in order to push the limits of browser gaming. While it is not yet compelete, this project has taught me so much: countless algorithms, design patterns, and most importantly, how to code smarter, not harder.</div>
+								<div class="project-links">
+									<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://dungeon.cadenpopps.com'">
+									<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/dungeon.cadenpopps.com'">
+								</div>
+							</div>
+							<div class="project-image" onclick="window.location='http://dungeon.cadenpopps.com';">
+								<img src="/img/projects/dungeon.png">
 							</div>
 						</div>
-						<div class="project-image" onclick="window.location='http://color.cadenpopps.com';">
-							<img src="/img/projects/color.png">
+						<div class="project project-right">
+							<div class="project-info">
+								<div class="project-title">Color Picker</div>
+								<div class="project-subtitle">For Designers and Developers</div>
+								<div class="project-description">This color picker provides a quick and visual way to select colors and transport them to your code. It includes a unique hue wheel, a large panel to view the color you selected, and the ability to copy 3 common color representations to your clipboard. This project taught me how color is represented on computers, as well as their relationship with one another.</div>
+								<div class="project-links">
+									<img src="/img/icons/link.png" class="project-link inverted" onclick="window.location='http://color.cadenpopps.com'">
+									<img src="/img/icons/github.png" class="project-link" onclick="window.location='https://github.com/cadenpopps/color.cadenpopps.com'">
+								</div>
+							</div>
+							<div class="project-image" onclick="window.location='http://color.cadenpopps.com';">
+								<img src="/img/projects/color.png">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div id="about" class="page">
-				<div id="about-title-container">
-					<div id="about-title-text">Caden Popps</div>
-					<div id="about-title-line"></div>
-				</div>
-				<div id="about-subtitle">
-					<span class="about-subtitle-word">Curious</span> •
-					<span class="about-subtitle-word">Passionate</span> •
-					<span class="about-subtitle-word">Experienced</span>
-				</div>
-				<div id="about-text">
-					<div id="about-curious" class="about-text-section">
-						From the moment <span class="gold">Hello World</span> appeared on my console, I was hooked. I learned the technologies and skills I needed to&nbsp;code my website, and haven't stopped learning since.
+				<div id="about-content" class="page-content">
+					<div id="about-title" class="page-title-container">
+						<div class="page-title-text">Caden Popps</div>
+						<div class="page-title-line"></div>
 					</div>
-					<div id="about-passionate" class="about-text-section">
-						Programming can be tedious; without proper motivation many developers burn out.
-						The pursuit of writing
-						<span class="gold">smart</span>, <span class="gold">clean</span>, and <span class="gold">effective code</span>
-						has kept me passionate about the&nbsp;work I do.
+					<div id="about-subtitle">
+						<span class="about-subtitle-word">Curious</span> •
+						<span class="about-subtitle-word">Passionate</span> •
+						<span class="about-subtitle-word">Experienced</span>
 					</div>
-					<div id="about-experienced" class="about-text-section">
-						My experience includes several
-						<span class="gold">programming internships</span>,
-						many <span class="gold">personal projects</span>,
-						and a highly successful <span class="gold">freelance project</span>.
-						I am currently pursuing a bachelor's degree in Computer Science at the University of Texas at Dallas.
+					<div id="about-text">
+						<div id="about-curious" class="about-text-section">
+							From the moment <span class="gold">Hello World</span> appeared on my console, I was hooked. I learned the technologies and skills I needed to&nbsp;code my website, and haven't stopped learning since.
+						</div>
+						<div id="about-passionate" class="about-text-section">
+							Programming can be tedious; without proper motivation many developers burn out.
+							The pursuit of writing
+							<span class="gold">smart</span>, <span class="gold">clean</span>, and <span class="gold">effective code</span>
+							has kept me passionate about the&nbsp;work I do.
+						</div>
+						<div id="about-experienced" class="about-text-section">
+							My experience includes several
+							<span class="gold">programming internships</span>,
+							many <span class="gold">personal projects</span>,
+							and a highly successful <span class="gold">freelance project</span>.
+							I am currently pursuing a bachelor's degree in Computer Science at the University of Texas at Dallas.
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div id="contact" class="page">
-				<div id="contact-text">Contact me at</div>
-				<div id="contact-email">Cadenpopps@gmail.com</div>
-				<div id="contact-social-links">
-					<a href="https://github.com/cadenpopps" id="github" class="social-link">
-						<img src="/img/social/github.png" id="github-img">
-					</a>
-					<a href="https://www.linkedin.com/in/cadenpopps/" id="linkedin" class="social-link inverted">
-						<img src="/img/social/linkedin.png" id="linkedin-img">
-					</a>
+				<div id="contact-content" class="page-content">
+					<div id="contact-title" class="page-title-container">
+						<div class="page-title-text">Contact Me</div>
+						<div class="page-title-line"></div>
+					</div>
+					<!-- <div id="contact-text">Contact me at</div> -->
+					<!-- <div id="contact-email">Cadenpopps@gmail.com</div> -->
+					<div id="contact-social-links">
+						<a href="https://github.com/cadenpopps" id="github" class="social-link">
+							<img src="/img/social/github.png" id="github-img">
+						</a>
+						<a href="https://www.linkedin.com/in/cadenpopps/" id="linkedin" class="social-link inverted">
+							<img src="/img/social/linkedin.png" id="linkedin-img">
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	</body>
 
 </html>
