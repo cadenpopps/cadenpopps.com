@@ -5,7 +5,6 @@ const ANIMATIONS = true, NO_ANIMATIONS = false;
 $(document).ready(function () {
 
 	if (window.innerWidth >= 900) {
-		console.log("test");
 		initPages();
 		initMenu();
 	}

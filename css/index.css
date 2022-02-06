@@ -10,8 +10,9 @@
 	--dark-text: black;
 
 	--purple: #27283A;
-	--light-purple: #34354A;
-	--gold: #FFCC33;
+	--light-purple: #35374C;
+	/* --gold: #FFCC33; */
+	--gold: #FFDD55;
 	--off-gold: #EABC2A;
 	--gray: #B0B0BA;
 }
@@ -53,7 +54,7 @@ a {
 
 /* -----------------------------   Mobile   ----------------------------- */
 
-@media(max-width: 1100px) {
+@media(max-width: 900px) {
 
 	body {
 		font-family: Montserrat, sans-serif;
@@ -118,7 +119,7 @@ a {
 
 /* -----------------------------   Desktop   ----------------------------- */
 
-@media(min-width: 1100px) {
+@media(min-width: 900px) {
 
 	#menu {
 		position: absolute;
@@ -206,7 +207,7 @@ a {
 
 		padding: calc(20px + var(--menu-height)) 120px;
 
-		background-color: rgba(255, 255, 255, .1);
+		/* background-color: rgba(255, 255, 255, .1); */
 	}
 
 	.page-title-container {
@@ -218,7 +219,7 @@ a {
 		/* width: 850px; */
 		width: calc(100% - 100px);
 
-		margin: 60px auto;
+		margin: 40px auto 0 auto;
 		padding: 0 50px;
 	}
 	.page-title-text {
@@ -300,7 +301,7 @@ a {
 
 		border: 3px solid white;
 		border-radius: 8px;
-		color: var(--off-gold);
+		color: var(--gold);
 		font-size: 19pt;
 		font-weight: 600;
 
@@ -330,7 +331,7 @@ a {
 
 	#portfolio-description {
 		width: 90%;
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 
 		text-align: center;
 		font-size: 20pt;
@@ -344,7 +345,7 @@ a {
 		justify-content: center;
 		align-content: flex-start;
 
-		width: 90%;
+		width: 95%;
 	}
 	.project-divider {
 		display: none;
@@ -363,7 +364,7 @@ a {
 		justify-content: space-between;
 		transition-duration: 300ms;
 
-		padding: 60px;
+		padding: 40px;
 
 		background-color: var(--light-purple);
 		filter: drop-shadow(1px 5px 8px rgba(0, 0, 0, .25));
