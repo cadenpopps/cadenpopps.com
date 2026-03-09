@@ -3,7 +3,7 @@ var scrollPos, scrollStage, scrollMax, scrollHistory;
 var pageTimeout;
 
 var projState = 0;
-var PROJECTS = 4;
+var PROJECTS;
 
 $(document).ready(function () {
 
