@@ -4,114 +4,162 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Caden Popps — software engineer, builder of web tools and interactive experiments. SailPoint. Games, color, timer, popps.js.">
+	<meta name="description" content="A personal hub for projects, interests, and technical work — by Caden Popps.">
 	<title>Caden Popps</title>
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/css/site.css">
 	<link rel="stylesheet" href="/css/index.css">
-	<link rel="stylesheet" href="/css/tiles.css">
-
-	<script src="/js/app.js" defer></script>
 </head>
 
 <body>
-	<div class="cover" aria-hidden="true"></div>
-
-	<header class="nav-mobile" role="navigation">
-		<nav class="nav-mobile-inner">
-			<a href="#welcome">Home</a>
-			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#games">Games</a>
-			<a href="#contact">Contact</a>
-		</nav>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#home" aria-label="Home">cadenpopps.com</a>
+			<nav class="site-nav" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#interests">Interests</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
 	</header>
 
-	<main id="page">
-		<section id="welcome" class="section">
-			<div class="tab subtitle">welcome</div>
-			<div class="content">
-				<div>
-					<p class="subtitle">Hi, I'm</p>
-					<h1 class="title">Caden Popps</h1>
-					<p class="tagline">Software engineer · builder of tools &amp; experiments</p>
-				</div>
-				<div class="social-links">
-					<a href="https://www.linkedin.com/in/cadenpopps/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
-					<a href="https://github.com/cadenpopps" class="social-link" aria-label="GitHub">GitHub</a>
+	<main class="page">
+		<section id="home" class="section hero">
+			<div class="container">
+				<p class="eyebrow">A personal hub for projects, interests, and technical work.</p>
+				<h1 class="display">Caden Popps</h1>
+				<p class="lede">
+					I’m a software engineer with an interest in thoughtful technology, polished experiences, and the kinds of skills that reward precision, strategy, and iteration.
+				</p>
+				<div class="cta-row">
+					<a class="button" href="#projects">Explore projects</a>
+					<a class="button button-ghost" href="https://www.linkedin.com/in/cadenpopps/" target="_blank" rel="noopener">LinkedIn</a>
+					<a class="button button-ghost" href="https://github.com/cadenpopps" target="_blank" rel="noopener">GitHub</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="about" class="section">
-			<div class="tab subtitle">about</div>
-			<div class="content">
-				<h2 class="title">About me</h2>
-				<div class="body">
-					<p class="body-text">
-						I'm a software engineer at <a href="https://www.sailpoint.com/" class="link" target="_blank" rel="noopener">SailPoint</a>. I care about code quality, maintainability, and thoughtful UX. I've spent years building interactive web projects — games, visual experiments, and utility tools — and I still do. This site is the hub for that work.
-					</p>
-					<a href="https://www.linkedin.com/in/cadenpopps/" class="action-button" target="_blank" rel="noopener">LinkedIn</a>
+			<div class="container">
+				<h2 class="h2">About</h2>
+				<div class="prose">
+					<p>I’m a software engineer with a strong interest in building things that are clear, useful, and well-crafted. I care about both how systems work and how they feel to use — the structure behind the experience, and the details that make something feel polished instead of merely functional.</p>
+					<p>Outside of software, I’m drawn to interests that reward strategy, precision, and steady improvement. A lot of them look different on the surface, but they share the same core appeal: depth, refinement, and the satisfaction of getting better at something that can’t be rushed.</p>
+					<p>This site is a curated home for some of that work and a few of those interests. It is meant to be a simple, personal hub rather than a full public life feed.</p>
 				</div>
 			</div>
 		</section>
 
 		<section id="projects" class="section">
-			<div class="tab subtitle">projects</div>
-			<div class="content">
-				<h2 class="title">Tools &amp; experiments</h2>
-				<div class="body">
-					<p class="body-text">Personal projects and subdomains I build and maintain. All static, fast, and deployable from this ecosystem.</p>
-					<div class="tiles" role="list">
-						<button type="button" class="arrow left-arrow" id="l" aria-label="Previous"></button>
-						<a href="https://color.cadenpopps.com" class="tile" role="listitem">
-							<img src="/img/projects/color.jpg" alt="" width="450" height="225">
-							<span class="info">Color picker <span class="description">for programmers</span></span>
-						</a>
-						<a href="https://timer.cadenpopps.com" class="tile tile-text-only" role="listitem">
-							<span class="info">Timer <span class="description">stopwatch &amp; countdown</span></span>
-						</a>
-						<a href="https://js.cadenpopps.com" class="tile" role="listitem">
-							<img src="/img/projects/js.jpg" alt="" width="450" height="225">
-							<span class="info">popps.js <span class="description">canvas &amp; game helpers</span></span>
-						</a>
-						<a href="https://games.cadenpopps.com" class="tile tile-text-only" role="listitem">
-							<span class="info">Games hub <span class="description">browser games</span></span>
-						</a>
-						<button type="button" class="arrow right-arrow" id="r" aria-label="Next"></button>
-					</div>
-					<a href="/soon.html" class="action-button action-button-secondary">More projects</a>
+			<div class="container">
+				<h2 class="h2">Projects</h2>
+				<p class="section-subtitle">
+					This section highlights selected technical work, software projects, and other builds I’ve spent meaningful time on. Some are more professional, some more experimental, and some simply reflect ideas I found worth exploring.
+				</p>
+				<p class="section-subtitle">
+					What ties them together is a preference for clarity, usefulness, and clean execution. I’m especially interested in projects that involve thoughtful design, problem-solving, and turning complexity into something more intuitive.
+				</p>
+
+				<div class="cards">
+					<a class="card" href="https://color.cadenpopps.com">
+						<div class="card-media">
+							<img src="/img/projects/color.jpg" alt="" loading="lazy" decoding="async">
+						</div>
+						<div class="card-body">
+							<div class="card-title">Color</div>
+							<div class="card-meta">A color picker for programmers.</div>
+							<div class="card-link">color.cadenpopps.com</div>
+						</div>
+					</a>
+
+					<a class="card" href="https://timer.cadenpopps.com">
+						<div class="card-body">
+							<div class="card-title">Timer</div>
+							<div class="card-meta">Stopwatch &amp; countdown utility.</div>
+							<div class="card-link">timer.cadenpopps.com</div>
+						</div>
+					</a>
+
+					<a class="card" href="https://js.cadenpopps.com">
+						<div class="card-media">
+							<img src="/img/projects/js.jpg" alt="" loading="lazy" decoding="async">
+						</div>
+						<div class="card-body">
+							<div class="card-title">popps.js</div>
+							<div class="card-meta">A small canvas and game helper library.</div>
+							<div class="card-link">js.cadenpopps.com</div>
+						</div>
+					</a>
+
+					<a class="card" href="https://games.cadenpopps.com">
+						<div class="card-body">
+							<div class="card-title">Games</div>
+							<div class="card-meta">Browser games and interactive experiments.</div>
+							<div class="card-link">games.cadenpopps.com</div>
+						</div>
+					</a>
+
+					<a class="card" href="https://rl.insider.gg" target="_blank" rel="noopener">
+						<div class="card-media">
+							<img src="/img/projects/rlinsider.jpg" alt="" loading="lazy" decoding="async">
+						</div>
+						<div class="card-body">
+							<div class="card-title">RL Insider</div>
+							<div class="card-meta">Past frontend work.</div>
+							<div class="card-link">rl.insider.gg</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="note">
+					<span class="note-strong">Later:</span> tab.cadenpopps.com, dungeon.cadenpopps.com
 				</div>
 			</div>
 		</section>
 
-		<section id="games" class="section">
-			<div class="tab subtitle">games</div>
-			<div class="content">
-				<h2 class="title">Browser games</h2>
-				<div class="body">
-					<p class="body-text">I started with <a href="https://p5js.org/" class="link" target="_blank" rel="noopener">p5.js</a>, then built <a href="https://js.cadenpopps.com" class="link">popps.js</a> — a small canvas and game library that powers my games. Fireworks, fish, snake, and more live at the hub.</p>
-					<a href="https://games.cadenpopps.com" class="action-button">Play games</a>
+		<section id="interests" class="section">
+			<div class="container">
+				<h2 class="h2">Interests</h2>
+				<div class="prose">
+					<p>Outside of software, I spend time on a mix of competitive, strategic, and performance-oriented interests. These include gaming, pool, chess, fitness, and other pursuits that reward focus, adaptation, and repetition over time.</p>
+					<p>I’m less interested in broadcasting everything than in keeping a few meaningful parts of my world in one place. This section exists as a selective glimpse into the interests that shape how I think, compete, and spend my time.</p>
 				</div>
 			</div>
 		</section>
 
 		<section id="contact" class="section">
-			<div class="tab subtitle">contact</div>
-			<div class="content">
-				<h2 class="title">Get in touch</h2>
-				<div class="body">
-					<p class="body-text">For work or collaboration, email me. For bugs or suggestions on this site, <a href="mailto:cadenpopps1@gmail.com?subject=Site%20feedback" class="link">send feedback</a>.</p>
-					<a href="mailto:cadenpopps1@gmail.com" class="action-button">Email me</a>
+			<div class="container">
+				<h2 class="h2">Contact</h2>
+				<p class="section-subtitle">If you’d like to connect, collaborate, or reach out about a project, feel free to get in touch.</p>
+				<div class="cta-row">
+					<a class="button" href="mailto:cadenpopps1@gmail.com">Email me</a>
+					<a class="button button-ghost" href="/soon.html">More links</a>
 				</div>
 			</div>
 		</section>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<div class="footer-left">© <span id="year"></span> Caden Popps</div>
+				<div class="footer-right">
+					<a href="#home">Top</a>
+				</div>
+			</div>
+		</footer>
 	</main>
+
+	<script>
+		(function () {
+			var y = document.getElementById('year');
+			if (y) y.textContent = String(new Date().getFullYear());
+		})();
+	</script>
 </body>
 
 </html>

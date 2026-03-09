@@ -17,8 +17,9 @@ body {
 }
 
 body {
-	font-family: 'DM Sans', system-ui, sans-serif;
+	font-family: 'Montserrat', system-ui, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 a {
@@ -37,9 +38,15 @@ img {
 	--text-dark: rgb(20, 20, 40);
 	--accent: rgb(255, 100, 90);
 
-	--color1: hsl(240, 48%, 28%);
-	--color2: hsl(225, 48%, 28%);
-	--color3: hsl(210, 48%, 28%);
-	--color4: hsl(195, 48%, 28%);
-	--color5: hsl(180, 42%, 26%);
+	--color1: hsl(240, 60%, 32%);
+	--color2: hsl(225, 56%, 30%);
+	--color3: hsl(210, 54%, 30%);
+	--color4: hsl(195, 54%, 28%);
+	--color5: hsl(180, 48%, 24%);
+
+	--surface: rgba(255, 255, 255, 0.08);
+	--surface-strong: rgba(255, 255, 255, 0.12);
+	--border: rgba(255, 255, 255, 0.18);
+
+	--shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
 }
