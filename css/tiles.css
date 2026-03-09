@@ -1,108 +1,133 @@
-
 :root {
-    --titleColor:white;
-    --textFont: 'Montserrat';
-    --tileWidth:450px;
-    --tileHeight:225px;
-    --tileBrightnessHover:50%;
-    --scaleBG: 1.08;
-    --blurTileBG:3px;
-    --blurTileBGHover:4px;
-    --mobileTileBrightness:60%;
-    --mobileTileBlur: 1px;
-    --spaceBetweenTiles:20px;
-    --spaceAroundTiles:0px;
-} 
-
-.tiles{
-    position: relative;
-    width: var(--tileWidth);
-    height: var(--tileHeight);
-    display: flex;
-    overflow-x: hidden;
-    border-radius: 6px;
-    border:2px solid white;
+	--tile-width: 450px;
+	--tile-height: 225px;
+	--tile-brightness: 50%;
+	--tile-brightness-hover: 80%;
+	--tile-blur: 3px;
+	--tile-blur-hover: 4px;
+	--tile-scale: 1.08;
+	--tile-gap: 20px;
 }
 
-.tile{
-    position: relative;
-    font-size: var(--fontSize);
-    font-family: var(--textFont);
-    font-weight: bold;
-    text-align:center;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    background-color:var(--BGColor);
-    background-size: cover;
-    background-position: center;
-    transition-duration: .2s;
-    z-index: 1;
-    overflow: hidden;
-    cursor: pointer;
-
-    min-width: var(--tileWidth);
-    min-height: var(--tileHeight);
-    border-radius: 6px;
+.tiles {
+	position: relative;
+	width: var(--tile-width);
+	height: var(--tile-height);
+	display: flex;
+	overflow-x: hidden;
+	border-radius: 8px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-.tile img{
-    flex:none;
-    margin-top:-1%;
-    margin-left:3%;
-    min-height:102%;
-    max-width:106%;
-    transition-duration: .3s;
-    filter:brightness(var(--tileBrightnessHover)) blur(var(--blurTileBGHover));
+.tile {
+	position: relative;
+	flex-shrink: 0;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color3);
+	min-width: var(--tile-width);
+	min-height: var(--tile-height);
+	border-radius: 6px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.2s ease;
 }
 
-.info{
-    margin-top:-2px;
-    padding:8px;
-    position: absolute;
-    display:block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    transition-duration: .2s;
+
+.tile img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: filter 0.3s ease, transform 0.3s ease;
+	filter: brightness(var(--tile-brightness)) blur(var(--tile-blur-hover));
 }
 
-.description{
-    font-size:.8em;
+.tile:hover img {
+	filter: brightness(var(--tile-brightness-hover)) blur(var(--tile-blur));
+	transform: scale(var(--tile-scale));
 }
 
-.tiles:hover .tile img{
-    filter:brightness(80%) blur(var(--blurTileBG));
-    transform: scale(var(--scaleBG));
+.tile-text-only {
+	background: rgba(0, 0, 0, 0.25);
 }
 
-.tiles:hover .tile .info{
-    margin-top:-80px;
-    opacity: .8;
+.tile-text-only .info {
+	position: relative;
+	margin-top: 0;
+	opacity: 1;
 }
 
-.arrow:hover{
-    width:26px;
-    height:26px;
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 12px 16px;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+	color: var(--text);
+	transition: margin 0.2s ease, opacity 0.2s ease;
+	z-index: 2;
 }
 
-.arrow{
-    filter:invert(100%);
-    position: absolute;
-    width:22px;
-    height: 22px;
-    align-self: center;
-    padding:4px;
-    z-index: 100;
-    transition-duration: .3s;
-    cursor: pointer;
+.tiles:hover .tile:not(.tile-text-only) .info {
+	margin-top: -60px;
+	opacity: 0.95;
 }
 
-.rightArrow{
-    right:0;
+.description {
+	display: block;
+	font-size: 0.85em;
+	font-weight: 500;
+	opacity: 0.9;
 }
 
-.leftArrow{
-    transform: rotate(180deg);
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 28px;
+	height: 28px;
+	padding: 6px;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.2s, opacity 0.2s;
+	opacity: 0.8;
+}
+
+.arrow:hover {
+	background: rgba(255, 255, 255, 0.35);
+	opacity: 1;
+}
+
+.arrow::after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-right: 2px solid var(--text);
+	border-bottom: 2px solid var(--text);
+	margin: 0 auto;
+}
+
+.right-arrow::after {
+	transform: rotate(-45deg);
+	margin-right: 2px;
+}
+
+.left-arrow::after {
+	transform: rotate(135deg);
+	margin-left: 2px;
+}
+
+.arrow[aria-hidden="true"] {
+	opacity: 0;
+	pointer-events: none;
 }

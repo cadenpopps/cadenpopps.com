@@ -1,6 +1,14 @@
-*{
-    margin:0;
-	padding:0;
+/* Base reset and globals */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 html,
@@ -8,24 +16,30 @@ body {
 	overflow-x: hidden;
 }
 
-body{
-	font-family: Montserrat, Arial, Helvetica, sans-serif;
+body {
+	font-family: 'DM Sans', system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
 
 :root {
-	--defaultTextColor:rgb(242,242,248);
-	--homeButtonColor:rgb(255,100,90);
+	--text: rgb(242, 242, 248);
+	--text-dark: rgb(20, 20, 40);
+	--accent: rgb(255, 100, 90);
 
-	--darkText: rgb(20, 20, 40);
-
-	--color1:hsl(240, 68%, 35%);
-	--color2:hsl(225, 68%, 35%);
-	--color3:hsl(210, 68%, 35%);
-	--color4:hsl(195, 68%, 35%);
-	--color5:hsl(180, 68%, 35%);
+	--color1: hsl(240, 48%, 28%);
+	--color2: hsl(225, 48%, 28%);
+	--color3: hsl(210, 48%, 28%);
+	--color4: hsl(195, 48%, 28%);
+	--color5: hsl(180, 42%, 26%);
 }

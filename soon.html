@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Coming Soon!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            text-align: center;
-            background-color: rgb(60, 60, 160);
-            color: white;
-            font-weight: 600;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .comingSoon {
-            margin-bottom: 20px;
-            font-size: 10vw;
-        }
-
-        .home {
-            font-size: 3vw;
-        }
-    </style>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex">
+	<title>More projects — Caden Popps</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/site.css">
+	<style>
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			background: var(--color1);
+			color: var(--text);
+			padding: 2rem;
+			font-weight: 500;
+		}
+		h1 { font-size: 1.75rem; margin-bottom: 1.5rem; font-weight: 600; }
+		ul { list-style: none; padding: 0; margin: 0 0 2rem; }
+		li { margin: 0.75rem 0; }
+		a { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+		a:hover { opacity: 0.9; }
+		.home { margin-top: 1rem; }
+	</style>
 </head>
 
 <body>
-
-    <div class="comingSoon">Coming Soon</div>
-    <div class="home">Click
-        <a href="/">here</a> to go home</div>
-
+	<h1>More projects</h1>
+	<p>Other corners of my web ecosystem:</p>
+	<ul>
+		<li><a href="https://color.cadenpopps.com">color.cadenpopps.com</a> — Color picker for programmers</li>
+		<li><a href="https://timer.cadenpopps.com">timer.cadenpopps.com</a> — Timer &amp; stopwatch</li>
+		<li><a href="https://js.cadenpopps.com">js.cadenpopps.com</a> — popps.js library</li>
+		<li><a href="https://games.cadenpopps.com">games.cadenpopps.com</a> — Browser games hub</li>
+		<li><a href="https://rl.insider.gg" target="_blank" rel="noopener">RL Insider</a> — Past frontend work</li>
+		<li><a href="/">cadenpopps.com</a> — Home</li>
+	</ul>
+	<p class="home"><a href="/">← Back home</a></p>
 </body>
 
 </html>
